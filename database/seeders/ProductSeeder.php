@@ -17,15 +17,15 @@ class ProductSeeder extends Seeder
         \DB::table('products')->insert([
             'product_name' => 'Baju keren 1',
             'description' => 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil, adipisci.',
-            'image' => 'image/1.png',
+            'image' => 'uploads/1.png',
             'category_id'  => Category::firstOrCreate(['category_name' => 'Fashion'])->id
         ]);
 
         \DB::table('products')->insert([
-            'product_name' => 'Kursi 1',
+            'product_name' => 'Baju Keren 2',
             'description' => 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil, adipisci.',
-            'image' => 'image/2.png',
-            'category_id'  => Category::firstOrCreate(['category_name' => 'Furniture'])->id
+            'image' => 'uploads/2.png',
+            'category_id'  => Category::firstOrCreate(['category_name' => 'Fashion'])->id
         ]);
     }
 }

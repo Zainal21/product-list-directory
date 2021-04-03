@@ -11,7 +11,6 @@
             </div>
         </template>
         <div class="container mx-auto py-20">
-            <!-- component -->
             <div class="text-gray-900 bg-white">
                 <table class="table-fixed w-full">
                     <thead>
@@ -44,9 +43,9 @@
         props: ['categories'],
         methods: {
             handleDeleteCategory(data) {
-                if (!confirm('Are you sure ?'))return;
+                if (!confirm('Are you sure ?')) return;
                 data._method = 'DELETE',
-                this.$inertia.delete(`/category/${data.id}`)
+                    this.$inertia.delete(`/category/${data.id}`)
             }
         }
     }

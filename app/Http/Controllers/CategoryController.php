@@ -27,6 +27,11 @@ class CategoryController extends Controller
         return Inertia::render('Category/create');
     }
 
+    public function edit($id)
+    {
+        return Inertia::render('Category/edit', ['category' => Category::findOrfail($id)]);
+    }
+
     /**
      * Store a newly created resource in storage.
      *
