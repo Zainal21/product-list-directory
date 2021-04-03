@@ -20,10 +20,10 @@
                                 <jet-nav-link :href="route('dashboard')" :active="route().current('dashboard')">
                                     Dashboard
                                 </jet-nav-link>
-                                <jet-nav-link :href="route('dashboard')" :active="route().current('dashboard')">
+                                <jet-nav-link :href="route('product.index')" :active="route().current('product.index')">
                                     Product Management
                                 </jet-nav-link>
-                                <jet-nav-link :href="route('dashboard')" :active="route().current('dashboard')">
+                                <jet-nav-link :href="route('category.index')" :active="route().current('category.index')">
                                     Category Management
                                 </jet-nav-link>
                             </div>
